@@ -261,6 +261,18 @@ DNS lookup involves the following eight steps:
 
 Once the IP address has been resolved, the client should be able to request content from the resolved IP address. For example, the resolved IP may return a webpage to be rendered in the browser.
 
+------
+**Note to self: **
+
+After the first DNS resolution, the browser will store the IP address for a certain amount of time (depending on the DNS server's provided TTL).
+
+DNS Cache Flow Example:
+1. Browser: The first place the browser checks for the DNS record.
+2. Operating System: If not in the browser cache, the OS is checked.
+3. Router/Local Network: If not found in the OS cache, the request may go to the router.
+4. ISP or DNS Resolver: If not found in the router, the request goes to the ISP's DNS server.
+------
+
 ## Server types
 
 Now, let's look at the four key groups of servers that make up the DNS infrastructure.
