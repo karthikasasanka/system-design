@@ -262,7 +262,7 @@ DNS lookup involves the following eight steps:
 Once the IP address has been resolved, the client should be able to request content from the resolved IP address. For example, the resolved IP may return a webpage to be rendered in the browser.
 
 ------
-**Note to self: **
+**Note to self:**
 
 After the first DNS resolution, the browser will store the IP address for a certain amount of time (depending on the DNS server's provided TTL).
 
