@@ -351,6 +351,15 @@ A DNS cache (sometimes called a DNS resolver cache) is a temporary database, mai
 
 The Domain Name System implements a time-to-live (TTL) on every DNS record. TTL specifies the number of seconds the record can be cached by a DNS client or server. When the record is stored in a cache, whatever TTL value came with it gets stored as well. The server continues to update the TTL of the record stored in the cache, counting down every second. When it hits zero, the record is deleted or purged from the cache. At that point, if a query for that record is received, the DNS server has to start the resolution process.
 
+-----
+**Note to self:**
+
+To view the DNS cache in Windows, you can open the command prompt and enter the command `ipconfig /displaydns`
+
+And for Linux, It can be difficult to see the DNS cache because there is no OS-level DNS caching. 
+
+-----
+
 ## Reverse DNS
 
 A reverse DNS lookup is a DNS query for the domain name associated with a given IP address. This accomplishes the opposite of the more commonly used forward DNS lookup, in which the DNS system is queried to return an IP address. The process of reverse resolving an IP address uses PTR records. If the server does not have a PTR record, it cannot resolve a reverse lookup.
